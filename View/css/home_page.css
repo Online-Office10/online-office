@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Kurd-font;
+    src: url('/font/Kurd-font.ttf');
+}
+*{
+    font-family: Kurd-font;
+}
+.back-img{
+   
+   height: 650px;
+   position: relative;
+   border-radius: 20px;
+   background-image: linear-gradient(to top,rgba(112, 112, 112, 0.9),rgba(220, 219, 219, 0.7)),url("/images/back-img.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 50% 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   animation: change 25s infinite ease-in-out ;
+   
+   
+}
+
+@keyframes change{
+    0%{
+        background-image: linear-gradient(to top,rgba(112, 112, 112, 0.9),rgba(220, 219, 219, 0.7)),url("/images/back-img.jpg");;
+   
+    }
+
+    50%{
+      background-image:   linear-gradient(to top,rgba(112, 112, 112, 0.9),rgba(220, 219, 219, 0.7)),url("/images/find-house.jpg");
+    }
+    100%{
+        background-image:   linear-gradient(to top,rgba(112, 112, 112, 0.9),rgba(220, 219, 219, 0.7)),url("/images/sold-house.png");
+      }
+
+}
+.row-image{
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 10px;
+   
+
+}
+.row-image img{
+    width: 90px;
+    height: 90px;
+}
+@media (max-width:660px) {
+    .row-image{
+        font-size: 1.2rem;
+        padding: 6px;
+    }
+    .row-image img{
+        width: 70px;
+        height: 70px;
+    }
+}
+.back-img p{
+    font-size: 1.8rem;
+    font-weight: 600;
+  text-align: center;
+}

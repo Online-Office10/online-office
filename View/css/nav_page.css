@@ -1,6 +1,6 @@
 @font-face {
     font-family: Kurd-font;
-    src: url('../font/Kurd-font.ttf');
+    src: url('/font/Kurd-font.ttf');
 }
 *{
     font-family: Kurd-font;
@@ -24,6 +24,7 @@ body{
 }
 .row-1 h1{
     font-size: 2.2rem;
+    color: #3B4144;
 }
 
 .row-1 ul{
