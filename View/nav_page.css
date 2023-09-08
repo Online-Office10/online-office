@@ -1,6 +1,6 @@
 @font-face {
     font-family: Kurd-font;
-    src: url('/font/Kurd-font.ttf');
+    src: url('../font/Kurd-font.ttf');
 }
 *{
     font-family: Kurd-font;
@@ -11,6 +11,7 @@ body{
     padding: 0px 20px;
     overflow-x: hidden;
     box-sizing: border-box;
+
 }
 
 .row-1{
@@ -92,6 +93,8 @@ body{
  background-color: #D93C23;
  color: #fff;
 }
+
+
 
 #login-btn img{
     width: 18px;

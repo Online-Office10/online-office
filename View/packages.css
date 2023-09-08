@@ -1,12 +1,13 @@
 @font-face {
     font-family: Kurd-font;
-    src: url('/font/Kurd-font.ttf');
+    src: url('../font/Kurd-font.ttf');
 }
 *{
     font-family: Kurd-font;
 }
 
 .title-packages{
+    
     padding-top: 3%;
     width: 100%;
     margin: 0 auto;

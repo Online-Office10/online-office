@@ -1,16 +1,18 @@
 @font-face {
     font-family: Kurd-font;
-    src: url('/font/Kurd-font.ttf');
+    src: url('../font/Kurd-font.ttf');
 }
 *{
     font-family: Kurd-font;
 }
+
+
 .back-img{
    
    height: 650px;
    position: relative;
    border-radius: 20px;
-   background-image: linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("/images/back-img.jpg");
+   background-image: linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/back-img.jpg");
    background-size: cover;
    background-repeat: no-repeat;
    background-position: 50% 0;
@@ -26,14 +28,14 @@
 
 @keyframes change{
     0%{
-        background-image: linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("/images/back-img.jpg");
+        background-image: linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/back-img.jpg");
     }
 
     50%{
-        background-image: linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("/images/building.jpg");
+        background-image: linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/building.jpg");
     }
     100%{
-        background-image: linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("/images/sold-house.png");
+        background-image: linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/sold-house.png");
       }
 
 }

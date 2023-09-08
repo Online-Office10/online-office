@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Kurd-font;
+    src: url('../font/Kurd-font.ttf');
+}
+*{
+    font-family: Kurd-font;
+}
+
+
+
+.form{
+
+
+    width: 340px;
+  display: none;
+    border: 2px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 18px;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    text-align: center;
+    z-index: 8;
+    background-color: #fff;
+
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: space-around;
+    
+}
+
+ .close-btn{
+    font-size: 3.0rem;
+
+
+  
+
+}
+
+.close-btn span{
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+.form-content h1{
+    text-align: center;
+}
+.form label{
+    font-size: 1.4rem;
+}
+
+.form input{
+    outline: none;
+    border: 1px solid #3B4144;
+    padding: 10px 4px;
+    margin: 10px 0;
+    text-align: right;
+    font-size: 1.3rem;
+    border-radius: 7px;
+    transition: .2s;
+}
+.form input:focus{
+    border-color: #D93C23;
+    box-shadow: 0px 0px 1px 1px #D93C23;
+
+    
+}
+
+.btn{
+    border: none;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: #D93C23;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: .2s;
+    margin-top: 10px;
+
+
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 1px 1px #D93C23;
+}
+
+.error{
+    margin-top:14px ;
+    color: #D93C23;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
