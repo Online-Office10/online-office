@@ -13,7 +13,7 @@ if (isset($_POST['sub'])) {
 $sql = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password')";
 
 if (mysqli_query($conn, $sql)) {
-    echo "<script>alert('Successfully created');</script>";
+  
 
     header("Location: home_page.html");
 

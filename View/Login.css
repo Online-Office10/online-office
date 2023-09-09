@@ -9,7 +9,7 @@
 
 
 
-.form{
+.form2 {
 
 
     width: 400px;
@@ -28,24 +28,18 @@
 
 }
 
-
-@media (max-width:700px){
-    .form{
-        width: 300px;
-    }
-}
-@media (max-width:500px){
-    .form{
+@media (max-width:600px){
+    .form2{
         width: 280px;
     }
 }
 @media (max-width:400px){
-    .form{
-        width: 250px;
+    .form2{
+        width: 230px;
     }
 }
 
-.form-content {
+.form-content2 {
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -53,7 +47,7 @@
 
 }
 
-.close-btn {
+.close-btn2 {
     font-size: 3.0rem;
 
 
@@ -61,26 +55,26 @@
 
 }
 
-.close-btn span {
+.close-btn2 span {
     position: absolute;
     top: 0;
     cursor: pointer;
     transition: .3s;
 }
 
-.close-btn span:hover{
+.close-btn2 span:hover{
  color: #D93C23;
 }
 
-.form-content h1 {
+.form-content2 h1 {
     text-align: center;
 }
 
-.form label {
+.form2 label {
     font-size: 1.4rem;
 }
 
-.form input {
+.form2 input {
     outline: none;
     border: 1px solid #3B4144;
     padding: 10px 4px;
@@ -91,14 +85,14 @@
     transition: .2s;
 }
 
-.form input:focus {
+.form2 input:focus {
     border-color: #D93C23;
     box-shadow: 0px 0px 1px 1px #D93C23;
 
 
 }
 
-.btn {
+.btn-2{
     border: none;
     width: 100%;
     padding: 12px 20px;
@@ -113,28 +107,26 @@
 
 }
 
-.btn:hover {
+.btn-2:hover{
     box-shadow: 0px 0px 1px 1px #D93C23;
 }
 
-.form-content button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#sign-up-img{
-    width: 18px;
-    height: 20px;
-    filter: invert(100%) sepia(2%) saturate(16%) hue-rotate(353deg) brightness(105%) contrast(100%);
-    transition: .4s;
-    padding: 0px 10px;
-}
-
-.error {
+.error2 {
     margin-top: 14px;
     color: #D93C23;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 600;
+}
+.form-content2 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Login-img{
+    width: 16px;
+    height: 22px;
+    filter: invert(100%) sepia(2%) saturate(16%) hue-rotate(353deg) brightness(105%) contrast(100%);
+    transition: .4s;
+    padding: 0px 10px;
 }
