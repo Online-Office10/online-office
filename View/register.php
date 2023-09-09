@@ -1,3 +1,34 @@
+
+<?php
+
+include 'connect.php';
+
+if (isset($_POST['sub'])) {
+  
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $password = $_POST['password'];
+
+
+$sql = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password')";
+
+if (mysqli_query($conn, $sql)) {
+    echo "<script>alert('Successfully created');</script>";
+
+    header("Location: home_page.html");
+
+    exit(); 
+    // Terminate the script execution after the header redirect
+} else {
+    echo "Error: " . mysqli_error($conn);
+}
+}
+
+
+
+?>
+
+
 <!DOCTYPE html>
 
   <head>
