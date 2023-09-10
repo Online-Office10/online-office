@@ -17,26 +17,35 @@
     <div class="column">
     <nav>
       <div class="row-1">
-        <h1>خانوو</h1>
+        <img src="..//images/h.svg" id="Logo-img">
 
         <ul>
-          <li><a href="#">کرێ</a></li>
-          <li><a href="#">فرۆشتن</a></li>
+          <li><a href="#"onclick="openPackage()" id="p-btn" >پاكێجەکان</a></li>|
+          <li><a href="#">کرێ</a></li>|
+          <li><a href="#">دانانی موڵک</a></li>|
           <li><a href="#">کڕین</a></li>
+         
         </ul>
 
         <div class="btn-1">
-          <button id="login-btn" onclick="openForm2()">
-            <img src="../images/login.png">چونە ژورەوە
-          </button>
+        
+        
+          <img src="../images/sign-up.png" class="register-img" onclick="openForm()">
           
-          <button id="sign-up-btn" onclick="openForm()">
-            <img src="../images/sign-up.png">تۆمار کردن
-          </button>
-     
+            
+      
 
+          
+          
+     
           <img src="../images/settings.png" title="ڕێکخستن" id="settings" />
         </div>
+     
+        <img src="../images/menu.png" id="menu">
+       
+
+
+
       </div>
     </nav>
     
@@ -54,40 +63,21 @@
 
       <p>لەم ماڵپەرەدا دەتوانی بە ئاسانی خانوەکەت بڵاو بکەیتەوە بیفرۆشی بە زوترین کات وە خانووی خەونەکانت بدۆزیەوە</p>
         </div>
-      
-       <div class="title-packages">
-        <h1>پاكێجەکان</h1>
-        <p>پێویستە یەکێک لە پاکێجەکان بکڕیت پێش ئەوەی خانوەکەت دابنێیت بۆ فرۆشتن یاخود کرێ</p>
      
-        <div class="packages">
-
-          <div class="package-1">
-            <h1>بڕۆنز</h1>
-            <p>$0</p>
-          </div>
-
-          <div class="package-2">
-            <h1>سلیڤەر</h1>
-            <p>$3</p>
-          </div>
-
-          <div class="package-3">
-            <h1>گۆڵد</h1>
-            <p>$7.99</p>
-          </div>
-         
-
-        </div>
-
-
-     
-      </div>
       
 
       <!--This is Resgister form-->
     <div class="form" id="form" >
       <form action="register.php" method="post" class="form-content" id="form-content">
-        <div class="close-btn"><span onclick="closeForm()">&times;</span></div>
+        <div class="close-btn">
+          <button class="Login-btn" onclick="openForm2()"><img src="..//images/login.png">
+            چونەژورەوە
+          </button>
+          
+          <span onclick="closeForm()">&times;</span></div>
+          <br>
+          <br>
+          
         <h1>تۆمارکردن</h1>
     
         <label for="name">ناو</label>
@@ -114,7 +104,13 @@
        <!--This is Login form-->
        <div class="form2" id="form2" >
         <form action="Login.php" method="post" class="form-content2" id="form-content2">
-          <div class="close-btn2"><span onclick="closeForm2()">&times;</span></div>
+          <div class="close-btn2">
+            <button class="sign-up-btn" onclick="openForm()"><img src="..//images/sign-up.png">
+              تۆمارکردن
+            </button>
+            <span onclick="closeForm2()">&times;</span></div>
+            <br>
+            <br>
           <h1>چونەژورەوە</h1>
     
       
@@ -134,11 +130,45 @@
         </form>
       </div>
 
+
+
+      <div class="packages2" id="package">
+        <span class="close-package" onclick="closePackage()">&times;</span>
+    <div class="title-packages">
+      <h1>پاكێجەکان</h1>
+      <p>پێویستە یەکێک لە پاکێجەکان بکڕیت پێش ئەوەی خانوەکەت دابنێیت بۆ فرۆشتن یاخود کرێ</p>
+   
+      <div class="packages">
+
+        <div class="package-1">
+          <h1>بڕۆنز</h1>
+          <p>$0</p>
+        </div>
+
+        <div class="package-2">
+          <h1>سلیڤەر</h1>
+          <p>$3</p>
+        </div>
+
+        <div class="package-3">
+          <h1>گۆڵد</h1>
+          <p>$7.99</p>
+        </div>
+       
+
+      </div>
+
+
+   
+    </div>
+      </div>
+
    
 </div>
 
 
 <script src="login.js" ></script>
+<script src="package.js"></script>
 <script src="sign_up.js" ></script>
     
 

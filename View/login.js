@@ -1,17 +1,24 @@
 function openForm2() {
     let form = document.getElementById("form2");
-    let btn=document.getElementById("sign-up-btn");
+    let btn=document.getElementById("form");
+    let btnPackage=document.getElementById("p-btn");
+    let error2 = document.getElementById("error2");
+    error2.style.display="none";
     form.style.display = "block";
     form.style.position="fixed";
-    btn.disabled=true;
+    btn.style.display="none";
+    btnPackage.style.pointerEvents="none";
+
 
   }
   
   function closeForm2() {
     document.getElementById("form2").style.display = "none";
-    let btn=document.getElementById("sign-up-btn");
-   
-    btn.disabled=false;
+  
+    let btnPackage=document.getElementById("p-btn");
+
+    btnPackage.style.pointerEvents="visible";
+
   }
   
 
@@ -42,6 +49,7 @@ form2.addEventListener("submit", (e) => {
     if (msg2.length > 0) {
       e.preventDefault();
       error2.innerText = msg2.join(", ");
+      error2.style.display="inline";
     }
   });
   

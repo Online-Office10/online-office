@@ -1,15 +1,21 @@
 function openForm() {
   let form = document.getElementById("form");
-  let btn=document.getElementById("login-btn");
+  let btn=document.getElementById("form2");
+  let btnPackage=document.getElementById("p-btn");
+  let error = document.getElementById("error");
+  error.style.display="none";
   form.style.display = "block";
   form.style.position="fixed";
-  btn.disabled=true;
+  btn.style.display="none";
+  btnPackage.style.pointerEvents="none";
 }
 
 function closeForm() {
   document.getElementById("form").style.display = "none";
-  let btn=document.getElementById("login-btn");
-  btn.disabled=false;
+ 
+  let btnPackage=document.getElementById("p-btn");
+
+  btnPackage.style.pointerEvents="visible";
 }
 
 let email = document.getElementById("email");
@@ -58,5 +64,7 @@ form.addEventListener("submit", (e) => {
   if (msg.length > 0) {
     e.preventDefault();
     error.innerText = msg.join(", ");
+    error.style.display="inline "
   }
 });
+

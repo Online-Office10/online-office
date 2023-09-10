@@ -13,10 +13,13 @@ if (isset($_POST['sub'])) {
 $sql = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password')";
 
 if (mysqli_query($conn, $sql)) {
+  echo "<script> 
+  alert('هەژمارەکەت بە سەرکەوتوی دروست بوو'); 
+  window.location.href = 'home_page.html';
+ 
   
-
-    header("Location: home_page.html");
-
+</script>";
+  
     exit(); 
     // Terminate the script execution after the header redirect
 } else {
@@ -127,7 +130,7 @@ if (mysqli_query($conn, $sql)) {
         <label for="password">ژمارەی نهێنی</label>
         <input type="password" id="password" placeholder="ژمارەی نهێنی بنوسە" name="password" >
     
-        <button type="submit" name="sub"  class="btn">تۆمارکردن</button>
+        <button type="submit" name="sub"  class="btn" id="">تۆمارکردن</button>
 
 
         <div id="error" class="error">
