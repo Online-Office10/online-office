@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Kurd-font;
+    src: url('../font/Kurd-font.ttf');
+}
+
+* {
+    font-family: Kurd-font;
+}
+
+
+
+.form{
+
+
+    width: 400px;
+
+    display: none;
+    border: 2px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 18px;
+    transform: translate(-50%, -50%);
+    padding: 45px 35px;
+    text-align: center;
+    z-index: 8;
+    background-color: #fff;
+
+}
+
+
+@media (max-width:700px){
+    .form{
+        width: 300px;
+    }
+}
+@media (max-width:500px){
+    .form{
+        width: 280px;
+    }
+}
+@media (max-width:400px){
+    .form{
+        width: 250px;
+    }
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: space-around;
+
+}
+
+.close-btn {
+    font-size: 3.0rem;
+
+
+
+
+}
+
+.close-btn span {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.close-btn span:hover{
+ color: #D93C23;
+}
+
+.form-content h1 {
+    text-align: center;
+}
+
+.form label {
+    font-size: 1.4rem;
+}
+
+.form input {
+    outline: none;
+    border: 1px solid #3B4144;
+    padding: 10px 4px;
+    margin: 10px 0;
+    text-align: right;
+    font-size: 1.3rem;
+    border-radius: 7px;
+    transition: .2s;
+}
+
+.form input:focus {
+    border-color: #D93C23;
+    box-shadow: 0px 0px 1px 1px #D93C23;
+
+
+}
+
+.btn {
+    border: none;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: #D93C23;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: .2s;
+    margin-top: 20px;
+
+
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 1px 1px #D93C23;
+}
+
+.form-content button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign-up-img{
+    width: 18px;
+    height: 20px;
+    filter: invert(100%) sepia(2%) saturate(16%) hue-rotate(353deg) brightness(105%) contrast(100%);
+    transition: .4s;
+    padding: 0px 10px;
+}
+
+.error {
+    margin-top: 14px;
+    color: #D93C23;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}

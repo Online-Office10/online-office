@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Kurd-font;
+    src: url('../font/Kurd-font.ttf');
+}
+*{
+    font-family: Kurd-font;
+}
+
+.title-packages{
+    
+    padding-top: 3%;
+    width: 100%;
+    margin: 0 auto;
+text-align: center;
+font-size: 1.3rem;
+color: #3B4144;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+
+
+}
+.title-packages p{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+   
+}
+
+.packages{
+    width: 70%;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  
+    align-items: center;
+    
+    padding: 7px;
+}
+
+.package-1{
+  
+   height: 400px;
+   width: 250px;
+   border-radius: 12px;
+   box-shadow: 0px 3px 3px 3px grey;
+   background-color: #CD7F32;
+   color: #fff;
+   transition: .4s;
+
+}
+.package-1 p{
+    font-size: 2.2rem;
+}
+
+.package-1:hover{
+    transform: scale(1.03);
+}
+
+
+.package-2{
+  
+    height: 400px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 3px 3px grey;
+    background-color: #858383;
+    color: #fff;
+    transition: .4s;
+ 
+ }
+ .package-2 p{
+     font-size: 2.2rem;
+ }
+ 
+ .package-2:hover{
+     transform: scale(1.03);
+ }
+
+ 
+.package-3{
+  
+    height: 400px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 3px 3px grey;
+    background-color: #cdae03;
+    color: #fff;
+    transition: .4s;
+ 
+ }
+ .package-3 p{
+     font-size: 2.2rem;
+ }
+ 
+ .package-3:hover{
+     transform: scale(1.03);
+ }
