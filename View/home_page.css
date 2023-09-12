@@ -21,7 +21,9 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   animation: change 25s infinite ease-in-out ;
+   animation: change 25s infinite ease-in-out ;    
+
+   
    
    
 }
